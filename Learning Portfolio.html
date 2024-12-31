@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design and Analysis of Algorithms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        strong {
+            color: #4CAF50;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Design and Analysis of Algorithms</h1>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Theory - Learning Portfolio</h2>
+            <h3>Home Page – Introduction</h3>
+            <p><strong>What is the course about?</strong></p>
+            <p>This course, Design and Analysis of Algorithms, is an essential component for anyone looking to deepen their understanding of computer science and problem-solving techniques. At its core, the course focuses on the systematic study of algorithms and data structures, which serve as the backbone of efficient computing. By learning to break down complex problems into simpler, solvable steps, you gain the ability to design and analyze algorithms that are not only correct but also optimal in terms of time and space complexity.</p>
+
+            <p><strong>What kind of data structures and algorithms have you studied?</strong></p>
+            <p>Throughout the course, we have explored a wide range of fundamental data structures and algorithms. These include arrays, linked lists, stacks, queues, trees, and graphs, each offering unique ways to organize and manipulate data. We have also delved into more advanced concepts such as hashing, searching and sorting algorithms, and graph algorithms, alongside methods for evaluating algorithm performance using Big-O notation. Additionally, the course covers problem-solving paradigms like divide and conquer, greedy algorithms, and dynamic programming, all of which are critical for tackling a variety of computational challenges. Whether it's optimizing a system, finding the shortest path in a graph, or efficiently sorting large datasets, these techniques are widely used in real-time applications.</p>
+
+            <p><strong>How do you connect the course with real-time applications?</strong></p>
+            <p>In the real world, the application of these algorithms and data structures is vast and critical. From search engines like Google, which use sophisticated graph algorithms for web crawling and page ranking, to social networks that employ tree-based structures for fast user data retrieval, these concepts form the foundation of modern computing. In industries ranging from finance (for high-frequency trading algorithms) to healthcare (for medical data analysis), understanding the intricacies of algorithms allows professionals to create faster, more scalable, and efficient systems that drive innovation. This course not only builds a strong theoretical foundation but also emphasizes practical implementation, ensuring that students are well-equipped to apply these concepts in real-world scenarios, optimize existing systems, and design solutions that meet the challenges of modern-day computing.</p>
+        </section>
+
+        <section id="project-introduction">
+            <h3>Course Project Introduction</h3>
+            <ul>
+                <li>Provide the details of problem space and how it was arrived at.</li>
+                <li>Summarize the findings from the white paper.</li>
+                <li>Reflect on city design and how business cases were identified.</li>
+                <li>Provide problem definition and team details.</li>
+                <li>Provide business cases that each member is working on.</li>
+            </ul>
+            <h3>Project Tasks and Implementation</h3>
+            <ol>
+               <ul>
+    <li><strong>Listing All Public Transports in the City:</strong>
+        <ul>
+            <li><strong>Data Structure Used:</strong> Arrays were utilized to maintain a list of all public transport modes (e.g., buses, trains, metros, etc.).</li>
+            <li><strong>Approach:</strong> By storing the data in a structured array, we could quickly retrieve and update the transport list.</li>
+        </ul>
+    </li>
+    <li><strong>Sorting All Public Transports:</strong>
+        <ul>
+            <li><strong>Algorithm Applied:</strong> Sorting algorithms like Merge Sort or Quick Sort were used to organize transports based on criteria like frequency, cost, or accessibility.</li>
+        </ul>
+    </li>
+    <li><strong>Collecting Parking and Toll Fares:</strong>
+        <ul>
+            <li><strong>Data Structure Used:</strong> Hash tables were employed to map locations to their respective toll and parking fares for efficient lookup.</li>
+        </ul>
+    </li>
+    <li><strong>Sorting All Fares:</strong>
+        <ul>
+            <li><strong>Algorithm Applied:</strong> Heap Sort was used to sort the fares from highest to lowest, facilitating better planning and resource allocation.</li>
+        </ul>
+    </li>
+    <li><strong>Tracking All Public Transport:</strong>
+        <ul>
+            <li><strong>Data Structure Used:</strong> Graphs were used to represent the city's transport network, with nodes as stations and edges as routes.</li>
+            <li><strong>Algorithm Applied:</strong> Dijkstra’s algorithm was employed to monitor real-time movement and find the shortest paths for better management.</li>
+        </ul>
+    </li>
+    <li><strong>Giving All Age Groups Access to Public Transport:</strong>
+        <ul>
+            <li><strong>Data Structure Used:</strong> Segmented arrays or linked lists were used to group data based on age (e.g., children, adults, seniors) for tailored services.</li>
+        </ul>
+    </li>
+    <li><strong>Sorting Vehicles Based on Pollution:</strong>
+        <ul>
+            <li><strong>Algorithm Applied:</strong> Bubble Sort was applied to arrange vehicles by the emissions they produce, providing insight into prioritizing greener options.</li>
+        </ul>
+    </li>
+    <li><strong>Implementing a Common Payment Method:</strong>
+        <ul>
+            <li><strong>Data Structure Used:</strong> Trees (e.g., AVL Tree) were implemented to maintain a unified database of payments, ensuring efficient transactions and scalability.</li>
+        </ul>
+    </li>
+    <li><strong>List Transports by Seating Capacity:</strong>
+        <ul>
+            <li><strong>Data Structure Used:</strong> Priority queues were used to sort vehicles based on their seating capacity for quick access to data.</li>
+        </ul>
+    </li>
+    <li><strong>Sort Based on Average Number of People per Day:</strong>
+        <ul>
+            <li><strong>Algorithm Applied:</strong> Insertion Sort was applied to order vehicles by their daily passenger count for better resource allocation.</li>
+        </ul>
+    </li>
+    <li><strong>Collecting and Sorting Toll and Parking Fares:</strong>
+        <ul>
+            <li><strong>Approach:</strong> By aggregating fares from all city areas, we used Counting Sort to arrange them from maximum to minimum revenue collected.</li>
+        </ul>
+    </li>
+    <li><strong>Tracking Movements for Better Management:</strong>
+        <ul>
+            <li><strong>Data Structure Used:</strong> Graphs were used again to track vehicle movements in real-time, allowing efficient management of routes and schedules.</li>
+        </ul>
+    </li>
+    <li><strong>Separate Sections for Age Groups:</strong>
+        <ul>
+            <li><strong>Approach:</strong> Arrays and linked lists were used to allocate seats for different age groups dynamically, ensuring inclusivity and comfort.</li>
+        </ul>
+    </li>
+    <li><strong>Sort Sections in Order of Demand:</strong>
+        <ul>
+            <li><strong>Algorithm Applied:</strong> Quick Sort was used to prioritize sections based on their occupancy rates.</li>
+        </ul>
+    </li>
+    <li><strong>A Common Payment Application:</strong>
+        <ul>
+            <li><strong>Data Structure Used:</strong> A hash table linked to all payment systems enabled a seamless and unified method for managing payments across different services.</li>
+        </ul>
+    </li>
+</ul>
+            </ol>
+        </section>
+
+        <div>
+    <h1>Course Learning Reflections</h1>
+    <h2>Each Team Member will further provide the following in separate pages:</h2>
+    <p>Each student will logically divide the sections and subsections as per their understanding.</p>
+    
+    <h3>1. What are the kinds of problems we see in nature?</h3>
+    <ul>
+        <li><strong>Iteration:</strong> Problems where we repeatedly perform a task step-by-step (e.g., counting items, summing numbers).</li>
+        <li><strong>Recursion:</strong> Problems that can be broken into smaller versions of the same problem (e.g., calculating factorial, finding Fibonacci numbers).</li>
+        <li><strong>Backtracking:</strong> Problems where we explore all possibilities but backtrack when a choice doesn't work (e.g., solving mazes, Sudoku).</li>
+    </ul>
+    
+    <h3>2. What is space and time efficiency? Why are they important?</h3>
+    <ul>
+        <li><strong>Space Efficiency:</strong> Using less memory to solve a problem.</li>
+        <li><strong>Time Efficiency:</strong> Solving the problem quickly.</li>
+        <li><strong>Importance:</strong> Computers have limited resources, and efficient programs run faster and save memory.</li>
+    </ul>
+    
+    <h3>3. Explain the different classes of problems and orders of growth:</h3>
+    <ul>
+        <li><strong>Classes of Problems:</strong>
+            <ul>
+                <li>Easy problems (e.g., sorting) grow slowly as input increases.</li>
+                <li>Harder problems (e.g., optimization) grow faster and take more time/memory.</li>
+            </ul>
+        </li>
+        <li><strong>Orders of Growth:</strong>
+            <ul>
+                <li><strong>O(1):</strong> Constant time (fastest).</li>
+                <li><strong>O(log n):</strong> Logarithmic (e.g., binary search).</li>
+                <li><strong>O(n):</strong> Linear (e.g., looping through a list).</li>
+                <li><strong>O(n<sup>2</sup>):</strong> Quadratic (e.g., nested loops in sorting).</li>
+                <li><strong>O(2<sup>n</sup>):</strong> Exponential (e.g., backtracking).</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+      <div>
+    <h1>Takeaway from Different Design Principles from Chapter 2</h1>
+    
+    <h2>Hashing</h2>
+    <p>Hashing is a technique used to map data of arbitrary size to fixed-size values (hash values). These hash values are typically used as indices in a hash table or hash array for efficient data storage and retrieval.</p>
+    
+    <h3>Key Components of Hashing:</h3>
+    <ul>
+        <li><strong>Hash Function:</strong> A function that takes an input (key) and produces a fixed-size string or number (hash value).</li>
+        <li><strong>Hash Table/Array:</strong> A data structure that stores the key-value pairs, where the hash value determines the index.</li>
+    </ul>
+    
+    <h3>Collisions</h3>
+    <p>A collision occurs when two different keys produce the same hash value and are assigned to the same index in the hash table.</p>
+    
+    <h3>Techniques to Handle Collisions:</h3>
+    <ul>
+        <li>Chaining</li>
+        <li>Linear Probing</li>
+        <li>Quadratic Probing</li>
+    </ul>
+</div>
+
+      <div>
+    <h2>The Hierarchical Data and How Different Tree Data Structures Solve and Optimize Problem Scenarios</h2>
+    
+    <ul>
+        <li><strong>Tree:</strong> A structure with a root and branches. Useful for representing hierarchy (e.g., family tree, file system).</li>
+        <li><strong>BST (Binary Search Tree):</strong> Speeds up search operations.</li>
+        <li><strong>AVL Tree:</strong> A BST that stays balanced for faster operations.</li>
+        <li><strong>Red-Black Tree:</strong> A balanced BST used in databases.</li>
+        <li><strong>Heap:</strong> Helps in priority tasks like scheduling.</li>
+        <li><strong>Trie:</strong> Good for storing and searching words (e.g., autocomplete).</li>
+    </ul>
+</div>
+
+      <div>
+    <h2>The Need for Array Query Algorithms and Their Implications</h2>
+    
+    <h3>Why?</h3>
+    <p>To quickly find answers about data in arrays (e.g., sum, minimum).</p>
+    
+    <h3>Applications</h3>
+    <ul>
+        <li>Prefix sum arrays for fast calculations</li>
+        <li>Segment trees for range queries</li>
+    </ul>
+    
+    <h3>Principles</h3>
+    <p>Precompute results and use them efficiently when queried.</p>
+</div>
+
+      <div>
+    <h2>Difference Between Trees and Graphs and Their Traversals</h2>
+    
+    <h3>Tree</h3>
+    <p>A connected structure with no cycles.</p>
+    <h4>Traversals:</h4>
+    <ul>
+        <li>Preorder</li>
+        <li>Inorder</li>
+        <li>Postorder</li>
+    </ul>
+    
+    <h3>Graph</h3>
+    <p>Can have cycles and multiple connections.</p>
+    <h4>Traversals:</h4>
+    <ul>
+        <li>BFS (Breadth-First Search)</li>
+        <li>DFS (Depth-First Search)</li>
+    </ul>
+    
+    <h3>Applications</h3>
+    <ul>
+        <li><strong>Tree:</strong> Organizing files, databases</li>
+        <li><strong>Graph:</strong> Maps, social networks</li>
+    </ul>
+</div>
+
+      <div>
+    <h2>Sorting and Searching Algorithms: Techniques and Real-World Connections</h2>
+    
+    <h3>Sorting</h3>
+    <p>Arranging data (e.g., names alphabetically).</p>
+    <ul>
+        <li><strong>Bubble Sort:</strong> Simple but slow.</li>
+        <li><strong>Quick Sort:</strong> Efficient and fast.</li>
+    </ul>
+    
+    <h3>Searching</h3>
+    <p>Finding data (e.g., looking for a contact).</p>
+    <ul>
+        <li><strong>Linear Search:</strong> Check one by one.</li>
+        <li><strong>Binary Search:</strong> Divide and conquer for sorted data.</li>
+    </ul>
+</div>
+
+      <div>
+    <h2>The Importance of Graph Algorithms: Spanning Trees and Shortest Paths</h2>
+    
+    <h3>Spanning Tree</h3>
+    <p>Connects all nodes with the minimum cost (e.g., electrical wiring in cities).</p>
+    
+    <h3>Shortest Path</h3>
+    <p>Finds the quickest way to get somewhere (e.g., Google Maps).</p>
+    
+    <h3>Key Algorithms</h3>
+    <ul>
+        <li><strong>Kruskal’s Algorithm:</strong> Optimizes spanning tree problems.</li>
+        <li><strong>Dijkstra’s Algorithm:</strong> Solves shortest path problems efficiently.</li>
+    </ul>
+</div>
+
+      <div>
+    <h2>Different Studied Algorithm Design Techniques</h2>
+    
+    <ul>
+        <li><strong>Brute Force:</strong> Try everything (simple but slow).</li>
+        <li><strong>Greedy:</strong> Take the best choice now, hoping it leads to the best result (e.g., Huffman coding).</li>
+        <li><strong>Divide and Conquer:</strong> Divide the problem, solve each part, and combine results (e.g., Merge Sort).</li>
+        <li><strong>Dynamic Programming:</strong> Break problems into overlapping sub-problems, store results, and reuse them (e.g., knapsack problem).</li>
+    </ul>
+</div>
+
+      <div>
+    <h2>Questions to Consider When Forming Sections and Subsections</h2>
+    
+    <h3>How Do You Determine the Most Efficient Approach When Solving a Complex Problem?</h3>
+    <p>
+        I break the problem into smaller parts, analyze the constraints (time, space, resources), and consider possible algorithms or techniques. 
+        I compare their efficiencies using complexity analysis (e.g., O(n), O(log n)) and choose the one that fits the requirements best.
+    </p>
+</div>
+
+      <div>
+    <h2>Questions to Consider When Forming Sections and Subsections</h2>
+    
+    <h3>How Do You Determine the Most Efficient Approach When Solving a Complex Problem?</h3>
+    <p>
+        I break the problem into smaller parts, analyze the constraints (time, space, resources), and consider possible algorithms or techniques. 
+        I compare their efficiencies using complexity analysis (e.g., O(n), O(log n)) and choose the one that fits the requirements best.
+    </p>
+</div>
+
+      <div>
+    <h3>Reflect on a Situation Where You Need to Balance Multiple Conflicting Constraints in a Design</h3>
+    <p>
+        In the city planning project, we had to balance cost, accessibility, and environmental impact. 
+        I prioritized constraints by importance, used graphs for connectivity, and implemented sorting algorithms to analyze pollution and costs. 
+        A step-by-step approach ensured no constraint was ignored.
+    </p>
+</div>
+
+      <div>
+    <h3>What Criteria Do You Use to Evaluate the Effectiveness of a Solution?</h3>
+    <ul>
+        <li><strong>Correctness:</strong> Does it solve the problem?</li>
+        <li><strong>Efficiency:</strong> Is it fast and uses minimal memory?</li>
+        <li><strong>Scalability:</strong> Can it handle larger inputs?</li>
+        <li><strong>Simplicity:</strong> Is it easy to understand and implement?</li>
+        <li><strong>Adaptability:</strong> Can it handle variations or new requirements?</li>
+    </ul>
+
+    <h3>How Can You Adapt an Existing Solution to Address a New or Unforeseen Challenge?</h3>
+    <p>
+        By understanding the core logic of the existing solution, I identify similarities in the new challenge and make necessary tweaks. 
+        For example, a graph-based solution for a transport network could be adapted for social network analysis by modifying the parameters like edges and weights.
+    </p>
+</div>
+
+      <div>
+    <h3>What Strategies Do You Use to Identify Patterns or Structures in Complex Datasets or Problems?</h3>
+    <ul>
+        <li>Visualize the data using graphs or charts.</li>
+        <li>Group similar items or identify repetitions (clustering).</li>
+        <li>Use algorithms like prefix sums or hash maps for fast pattern recognition.</li>
+        <li>Break data into smaller chunks to analyze relationships.</li>
+    </ul>
+
+    <h3>How Do You Decide When to Prioritize Simplicity Over Optimization in a Solution?</h3>
+    <ul>
+        <li>The problem is small-scale and doesn’t need high efficiency.</li>
+        <li>Simplicity improves understanding and maintainability.</li>
+        <li>Optimization would overcomplicate the solution with negligible benefits.</li>
+    </ul>
+</div>
+
+      <div>
+    <h3>How Does Breaking Down a Problem Into Smaller Components Help You Approach It More Effectively?</h3>
+    <p>
+        Breaking down simplifies complexity by isolating manageable tasks. 
+        For instance, in the city planning project, we divided tasks (e.g., sorting transports, tracking movement) and solved them individually. 
+        Smaller problems are easier to test, debug, and combine for the final solution.
+    </p>
+
+    <h3>Reflect on the Trade-Offs While Choosing Between Different Approaches to Solve a Problem</h3>
+    <ul>
+        <li><strong>Time vs. Space:</strong> Faster algorithms may use more memory (e.g., Dynamic Programming).</li>
+        <li><strong>Simplicity vs. Optimization:</strong> Simple solutions may not scale well.</li>
+        <li><strong>Accuracy vs. Speed:</strong> Approximate solutions are quicker but may lack precision.</li>
+    </ul>
+    <p>Balancing these depends on problem constraints and priorities.</p>
+</div>
+
+      <div>
+    <h3>How Do You Identify and Address Potential Limitations or Weaknesses in a Proposed Solution?</h3>
+    <ul>
+        <li>Test the solution with edge cases.</li>
+        <li>Analyze its time and space complexity.</li>
+        <li>Gather feedback on usability.</li>
+        <li>Address weaknesses by refining algorithms, optimizing data structures, or simplifying logic.</li>
+    </ul>
+
+    <h3>How Does Applying Knowledge From One Context Help Solve a Problem in a Different Context?</h3>
+    <p>
+        Techniques like sorting, graphs, or dynamic programming are reusable across domains. 
+        For instance, the graph-based approach for transport networks can also model computer networks. 
+        Recognizing similarities helps adapt solutions to new contexts.
+    </p>
+</div>
+
+      <div>
+    <h3>How Do You Decide When to Innovate Versus Relying on Tried-and-Tested Solutions?</h3>
+    <ul>
+        <li><strong>Innovate:</strong> When existing methods fail to meet unique requirements or when efficiency must be drastically improved.</li>
+        <li><strong>Rely on Tested Solutions:</strong> When the problem is standard, and proven methods are reliable and efficient.</li>
+    </ul>
+    <p>The decision depends on the problem’s novelty and constraints.</p>
+</div>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Design and Analysis of Algorithms</p>
+    </footer>
+</body>
+</html>
